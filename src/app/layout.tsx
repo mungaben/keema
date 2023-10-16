@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter ,Poppins} from 'next/font/google'
+import MainNav from './components/NavBar/MainNav'
 
 const inter = Poppins({
   subsets: ['latin'],
@@ -19,6 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+   
       <body className={inter.className}>{children}</body>
     </html>
   )
