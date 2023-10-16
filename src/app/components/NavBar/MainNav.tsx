@@ -23,7 +23,7 @@ const navItems = [
 const MainNav = () => {
   return (
     <div className="    absolute overflow-hidden  w-full mt-[6dvw] z-50 ">
-      <div className="lg:gap-20  md:gap-10  shadow-md shadow-[#000] lg:rounded-[20px] md:rounded-[10px]  md:mx-[8dvw]  lg:mx-[15dvw] z-50 hidden md:flex justify-between items-center bg-[#fff]  text-[#016A70] lg:px-10  md:py-2  lg:py-5 ">
+      <div className="lg:gap-15 xl:gap-20  md:gap-10  shadow-md shadow-[#000] lg:rounded-[20px] md:rounded-[10px]  md:mx-[8dvw]  lg:mx-[15dvw] z-50 hidden md:flex justify-between items-center bg-[#fff]  text-[#016A70] lg:px-10  md:py-2  lg:py-5 ">
       <div>
         <Link href={"/"}>
           <Image
@@ -35,7 +35,7 @@ const MainNav = () => {
           />
         </Link>
       </div>
-      <div className=" flex flex-row lg:gap-15 md:gap-10">
+      <div className=" flex flex-row lg:gap-15 md:gap-2">
         {
           navItems.map((item,index)=>(
             <div key={index} className=" mx-4">
