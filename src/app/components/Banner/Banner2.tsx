@@ -5,7 +5,7 @@ import React from 'react'
 
 const Banner2 = () => {
   return (
-    <div>
+    <div className=' bg-bottom'>
         <Image
         src={'/images/home.png'}
         alt="Picture of the author"
