@@ -4,6 +4,7 @@ import MainNav from './components/NavBar/MainNav'
 import Services from './components/Category/Services'
 import ProductsPage from './components/Producst/ProductsPage'
 import TestimonialPage from './components/Testimonials/TestimonialPage'
+import WasteBankPage from './components/WasteBank/WasteBankPage'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
      <Services/>
      <ProductsPage/>
      <TestimonialPage/>
+     <WasteBankPage/>
     </main>
   )
 }

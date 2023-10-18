@@ -54,7 +54,7 @@ const ProductsPage = () => {
   
   ]
   return (
-    <div className=' bg-[#fff] h-screen mb-40  mt-20  text-[#222831] flex flex-col justify-evenly items-center'>
+    <div className=' bg-[#fff] min-h-screen mb-40  mt-20  text-[#222831] flex flex-col justify-evenly items-center'>
       <div className=' flex flex-col justify-center items-center '>
         <h3  className=' font-[400] leading-[42px] text-[28px] mt-5 text-[#222831]/70  '>
           Services
