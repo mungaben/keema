@@ -54,21 +54,21 @@ const ProductsPage = () => {
   
   ]
   return (
-    <div className=' bg-[#fff] min-h-screen mb-40  mt-20  text-[#222831] flex flex-col justify-evenly items-center'>
+    <div className=' bg-[#FFFF] z-50  keep-scrolling  mt-10    text-[#222831] flex flex-col justify-evenly items-center'>
       <div className=' flex flex-col justify-center items-center '>
-        <h3  className=' font-[400] leading-[42px] text-[28px] mt-5 text-[#222831]/70  '>
+        <h3  className=' font-[400] leading-[42px] text-[28px]  text-[#222831]/70  '>
           Services
         </h3> 
-        <h2 className='text-center  font-[600] leading-[54px] text-[36px] mt-3'>
+        <h2 className='text-center  font-[600] leading-[54px] text-[36px] bg-[#FFFF] '>
           We offer Best Services
         </h2>
 
       </div>
-
-      <div className=' grid  md:grid-cols-2 mb-10 lg:grid-cols-3 gap-20 mt-10   '>
+      <div className='  md:w-[80vw] w-full mx-10 bg-[#FFF] '>
+      <div className='  w-full grid grid-rows-2 keep-scrolling  overflow-scroll  grid-flow-col gap-4 place-content-center  '>
         {
           ProductsWeSell.map((service,index)=>(
-            <div key={index} className='flex flex-col  mx-0justify-between items-center   min-h-[350px] cursor-pointer  shadow-[#000]/30 shadow-inner rounded-lg '>
+            <div key={index} className='flex flex-col overflow-scroll min-w-full  keep-scrolling mx-5 justify-between   items-center    cursor-pointer  shadow-[#000]/30 shadow-inner rounded-lg '>
               <div className='flex justify-center items-center '>
                 <Image
                 src={"/images/home-biogas.png"}
@@ -77,11 +77,11 @@ const ProductsPage = () => {
                 alt={service.title}
                 />
               </div>
-              <div className=' bg-green-950   p-20 rounded-b-2xl'>
-              <h3 className='font-[600] max-w-[348px] text-[#fff]/70  leading-[30px] text-[20px] mt-2'>
+              <div className='    w-full   justify-start items-start rounded-b-2xl'>
+              <h3 className='font-[600]  md:ml-5 text-[#0000]/70 mx-2  leading-[30px] text-lg md:text-[20px] mt-2'>
                 {service.title}
               </h3>
-              <p className='text-[#fff]/70 max-w-[250px] text-center font-[400] leading-[24px] text-[16px] mt-2'>
+              <p className='text-[#0000]/70 mx-2  md:ml-5 text-start font-[400] leading-[24px] text-[16px] mt-2'>
                 {service.price}
               </p>
               </div>
@@ -92,6 +92,10 @@ const ProductsPage = () => {
         }
 
       </div>
+
+      </div>
+
+     
     </div>
   )
 }

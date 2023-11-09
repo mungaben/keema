@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <div className=" w-full ">
-      <article className=" ml-5 md:ml-0 justify-start items-start gap-4 mb-16">
+      <article className=" ml-5 md:ml-0 justify-start items-start gap-4 ">
         <h2 className=" lg:mt-20  md:mt-10 mt-0 font-semibold text-[28px] ">
           {" "}
           Hi Folks!

@@ -34,7 +34,7 @@ const Services = () => {
 
 ]
 return (
-  <div className=' bg-[#fff] h-[70dvh] mb-40 mt-20  text-[#222831] flex flex-col justify-evenly items-center'>
+  <div className=' bg-[#fff] h-[70dvh]  mt-20  text-[#222831] flex flex-col justify-evenly items-center'>
     <div className=' flex flex-col justify-center items-center '>
       <h3  className=' font-[400] leading-[42px] text-[28px] mt-5 text-[#222831]/70  '>
         Services
@@ -45,7 +45,7 @@ return (
 
     </div>
 
-    <div className=' grid mx-2 md:grid-cols-2 mb-10 lg:grid-cols-3 gap-20 mt-10   '>
+    <div className=' md:grid mx-2 md:grid-cols-2   lg:grid-cols-3 gap-20 mt-10   '>
       {
         serviceWeProvide.map((service,index)=>(
           <div key={index} className='flex flex-col justify-between items-center mt-4  p-14  min-h-[350px]  hover:shadow-2xl shadow-[#000]/30 shadow-inner rounded-lg '>

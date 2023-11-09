@@ -51,14 +51,14 @@ const Slider = () => {
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className="mySwiper justify-center items-center flex flex-col"
+        className="mySwiper justify-center items-center flex flex-col "
       >
 
         {
           testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index} className=" flex justify-center items-center flex-col p-10 gap-5">
-              <p className="text-[20px]  text-black text-center font-normal text-xl my-10">{testimonial.message}</p>
-              <div className="flex text-[20px]  justify-center items-center flex-col mt-5">
+            <SwiperSlide key={index} className=" flex justify-center items-center flex-col  gap-5">
+              <p className="md:text-[20px] text-[16px]   text-black text-center font-normal text-xl  my-5">{testimonial.message}</p>
+              <div className="flex text-[20px]  justify-center items-center flex-col ">
                 <p className="text-black text-center font-semibold text-xl">{testimonial.name}</p>
                 <p className="text-black text-center font-normal text-xl">{testimonial.date}</p>
               </div>
